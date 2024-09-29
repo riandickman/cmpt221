@@ -9,11 +9,18 @@ class Professor(db.Model):
     course = db.relationship('Courses', secondary = 'ProfessorCourse', back_populates = 'Professors')
     def __init__(self):
         # remove pass and then initialize attributes
-        pass
+        self.FirstName = self.FirstName
+        self.LastName = self.LastName
+        self.Email = self.Email
+        
 
     def __repr__(self):
         # add text to the f-string
         return f"""
+            "FIRST NAME: {self.FirstName},
+             LAST NAME: {self.LastName},
+             EMAIL: {self.Email}
+    
 
         """
     
