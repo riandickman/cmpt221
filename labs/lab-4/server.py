@@ -52,24 +52,24 @@ with app.app_context():
     # LAB 4 --------------------------------------------------
 
     # # write a query to insert 3 records into the Courses table
-    query_1 = """INSERT INTO Courses (CourseID, CourseName, Semester, Year) VALUES (120, 'Intro to Programming', 'Fall', 2020), (220, 'Software Development 1', 'Spring', 2021), (221, 'Software Development 2', 'Fall', 2021)"""
+    query_1 = """INSERT INTO "Courses" ("CourseID", "CourseName", "Semester", "Year") VALUES (120, 'Intro to Programming', 'Fall', 2020), (220, 'Software Development 1', 'Spring', 2021), (221, 'Software Development 2', 'Fall', 2021);"""
     db.session.execute(text(query_1))
     db.session.commit()
 
     # # write a query to select all records from the Courses table
-    query_2 = """SELECT * FROM Courses """
+    query_2 = """SELECT * FROM "Courses";"""
     courses = db.session.execute(text(query_2))
     print(f"\n\n----------- Courses Table")
     for course in courses:
         print(course)
 
     # # write a query to update 1 record in the Courses table
-    query_3 = """UPDATE Courses SET CourseName = 'Database Management' WHERE CourseName = 'Intro to Programming'"""
+    query_3 = """UPDATE "Courses" SET "CourseName" = 'Database Management' WHERE "CourseName" = 'Intro to Programming';"""
     db.session.execute(text(query_3))
     db.session.commit()
 
     # # write a query to delete 1 record in the Courses table
-    query_4 = """DELETE FROM Courses WHERE CourseName = 'Software Development 1'"""
+    query_4 = """DELETE FROM "Courses" WHERE "CourseName" = 'Software Development 1';"""
     db.session.execute(text(query_4))
     db.session.commit()
 
