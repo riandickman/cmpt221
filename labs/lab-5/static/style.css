@@ -1,20 +1,14 @@
 body {
-    background-color: hotpink;
+    background-color: lightblue;
   }
   
   h1 {
-    color: yellow;
+    color: blueviolet;
     text-align: center;
   }
   
   p {
-    color: aqua;
-    font-family: comic;
+    font-family: verdana;
     font-size: 20px;
-    text-align: center;
-  }
-
-  h2 {
-    color: rgb(0, 111, 128);
     text-align: center;
   }

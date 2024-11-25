@@ -1,20 +1,28 @@
+"""user.py: create a table named users"""
 from db.server import db
 
 class User(db.Model):
-    __tablename__ = 'users'  # Make sure this matches your actual table name
+    __tablename__ = 'Users'
+    UserID = db.Column(db.Integer,primary_key=True,autoincrement=True)
+    FirstName = db.Column(db.String(40))
+    LastName = db.Column(db.String(40))
+    Email = db.Column(db.String(40))
+    PhoneNumber = db.Column(db.String(12))
+    Password = db.Column(db.String(256))
 
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    first_name = db.Column(db.String(50), nullable=False)
-    last_name = db.Column(db.String(50), nullable=False)
-    email = db.Column(db.String(120), unique=True, nullable=False)
-    phone_number = db.Column(db.String(15), nullable=True)
-    password = db.Column(db.String(128), nullable=False)
-
-    def __init__(self, first_name, last_name, email, password):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.email = email
-        self.password = password
+    def __init__(self, FirstName, LastName, Email, PhoneNumber, Password):
+        self.FirstName = FirstName
+        self.LastName = LastName
+        self.Email = Email
+        self.PhoneNumber = PhoneNumber
+        self.Password = Password
 
     def __repr__(self):
-        return f"<User {self.first_name} {self.last_name}>"
+        return f"""
+            "FIRST NAME: {self.FirstName},
+             LAST NAME: {self.LastName},
+             EMAIL: {self.Email},
+             PHONE NUMBER: {self.PhoneNumber},
+             PASSWORD: {self.Password}
+        """
+    
