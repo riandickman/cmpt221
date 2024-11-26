@@ -1,0 +1,45 @@
+.. _`Resources`:
+
+Resources
+=========
+This section describes class and functions private to <application-name>. It is intended to document how the application works
+
+labs.lab-1
+----------
+Teaching students how to create a pull request.
+
+labs.lab-2
+----------
+Creating the foundation of using pip and installing needed requirements, as well as the creation and use of virtual environments.
+
+labs.lab-3
+----------
+Understanding the creation and connection to a postgres database, with the use of a virtual environment.
+
+labs.lab-4
+----------
+Learning the implementation of writing sql queries for the creation of function of the webpage in relation to the postgres database.
+
+labs.lab-5
+----------
+Build an intentionally bad gui of your choosing in order to learn how to create a good one.
+
+labs.lab-6
+----------
+Create a login and sign up page that connects to a database and is able to pull information inputted into the signup page when the user logins in, and if correct redirects user to another page.
+
+labs.lab-7
+----------
+Creating input validation, sanitization, and error handling within an application, as we did in-class.
+
+labs.lab-8
+----------
+Using javascript to create functions within an html document.
+
+labs.lab-9
+----------
+Creating unit tests in order to fix bugs, identify errors in code, and allow application to fail gracefully.
+
+labs.lab-10
+-----------
+Creating documentation for our cmpt221 repository using sphinx.

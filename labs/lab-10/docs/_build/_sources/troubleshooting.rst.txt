@@ -1,0 +1,21 @@
+.. _`Troubleshooting`:
+
+Troubleshooting
+===============
+This section describes some common issues that can arise and possible solutions.
+
+Issue #1
+--------
+Branches having conflicts.
+Solution: Stash changes from one branch and push the other. Then, go back and 
+
+Issue #2
+--------
+Git not pushing changes.
+Be sure to input git push --set-upstream origin <branchname>
+
+
+Issue #3
+--------
+New changes not appearing locally.
+Be sure to sync changes within the fork, and then pull those changes to your local repository's main branch before checking out a new branch.
