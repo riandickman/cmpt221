@@ -22,7 +22,6 @@
     ```bash
     cd labs/lab-8
     ```
-
 7. Create and activate your virtual environment
 8. Install the requirements
     ```bash
