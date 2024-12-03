@@ -43,3 +43,24 @@ def sample_signup_input():
             'PhoneNumber': '1234567891', 
             'Password': 'mypassword'
             }
+
+@pytest.fixture
+def sample_login_input():
+    return {'FirstName': 'Rian', 
+            'LastName': 'Dickman', 
+            'Email': 'rian@mrian.com', 
+            'PhoneNumber': '1234567891', 
+            'Password': 'rian'
+            }
+
+@pytest.fixture
+def sample_data():
+    return {
+        "name": "Rian",
+        "age": 18,
+        "email": "rian@rian.com"
+    }
+
+@pytest.fixture
+def database_connection():
+    raise ConnectionError("Unable to establish connection to database")
